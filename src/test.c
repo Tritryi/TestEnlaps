@@ -27,5 +27,8 @@ void run_tests()
 int main()
 {
     run_tests();
+    printf("\033[0;31m");
+    printf("Tous les tests sont passés \n");
+    printf("\033[0m");
     return EXIT_SUCCESS;
 }
