@@ -1,4 +1,4 @@
-# Première étape : préparer l'application
+# Première étape : préparer l'application en incluant les tests
 # Utilisation d'une image la plus légère possible
 FROM alpine:latest AS compiler
 
@@ -12,7 +12,7 @@ WORKDIR /app
 COPY . .
 
 # Compilation de l'application
-RUN make
+RUN make ; ./test
 
 
 # Deuxième étape : créer l'image voulue

@@ -11,3 +11,5 @@ deux étapes : compilation et création de l'application puis création de l'ima
 
 J'ai d'abord essayé d'utiliser une image spécifique aux programmes C à savoir "gcc:latest" mais j'ai réalisé qu'il
 y avait des problèmes ce compatibilité et j'ai donc utilisé deux images alpine.
+
+Une fois l'image correctement écrite je l'ai envoyé sur le docker hub visible ici : https://hub.docker.com/r/tritryi/calculator-app
