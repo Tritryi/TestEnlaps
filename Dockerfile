@@ -1,9 +1,8 @@
 # Utilisation d'une image de base générique et lourde
-FROM ubuntu:latest
+FROM alpine:latest
 
 # Mise à jour des paquets et installation de dépendances
-RUN apt-get update
-RUN apt-get install -y gcc make
+RUN apt-get update ; apt-get install -y gcc make
 
 # Répertoire de travail dans l'image
 WORKDIR /app
