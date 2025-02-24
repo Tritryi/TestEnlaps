@@ -1,0 +1,10 @@
+Je vais essayer de parler étape par étape de mon raisonnement pour optimiser le Dockerfile.
+
+Pour commencer, j'ai remarqué que l'image utilisée était ubuntu ce qui semble beaucoup trop gourmand pour une application
+aussi simpliste. J'ai donc remplacé cela par une distribution alpine que j'ai apprise en cours comme étant 
+une des plus légères et donc des plus efficaces.
+
+J'ai ensuite optimiser les différentes couches notamment en groupant les commandes RUN.
+
+Ensuite, je me suis renseigné sur le multi-stage et j'ai donc construit une structure qui séparait les tâches en 
+deux étapes : compilation et création de l'application puis création de l'image.
