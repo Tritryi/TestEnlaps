@@ -1,8 +1,8 @@
-# Utilisation d'une image de base générique et lourde
+# Utilisation d'une image de base spécifique aux images qui ont pour vocation d'être le moins lourde possible
 FROM alpine:latest
 
 # Mise à jour des paquets et installation de dépendances
-RUN apt-get update ; apt-get install -y gcc make
+RUN apk update ; apk add gcc make
 
 # Répertoire de travail dans l'image
 WORKDIR /app
