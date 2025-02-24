@@ -8,3 +8,6 @@ J'ai ensuite optimiser les différentes couches notamment en groupant les comman
 
 Ensuite, je me suis renseigné sur le multi-stage et j'ai donc construit une structure qui séparait les tâches en 
 deux étapes : compilation et création de l'application puis création de l'image.
+
+J'ai d'abord essayé d'utiliser une image spécifique aux programmes C à savoir "gcc:latest" mais j'ai réalisé qu'il
+y avait des problèmes ce compatibilité et j'ai donc utilisé deux images alpine.
