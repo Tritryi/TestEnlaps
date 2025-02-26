@@ -21,7 +21,7 @@ int divide(int a, int b)
 {
     if (b == 0)
     {
-        printf("Erreur : Division par zéro\n");
+        printf("\033[31mErreur : Division par zéro\033[0m\n");
         return 0;
     }
     return a / b;
